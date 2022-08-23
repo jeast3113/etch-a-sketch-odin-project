@@ -3,15 +3,10 @@
     padding: 0;
 }
 
-.grid-cell-row {
-    height: 1em;
-    line-height: 1em;
+.grid-container {
+    width: 400px;
+    height: 400px;
 }
 
-.grid-cell-column {
-    width: 2.8%;
-    height: 1em;
-    display: inline-block;
-    box-sizing: border-box;
-    border: 1px solid black;
-}
+
+
