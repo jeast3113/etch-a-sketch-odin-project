@@ -19,6 +19,7 @@ function creatingGrid(rowCol = 16) {
     document.documentElement.style.setProperty("--grid-rowCol", rowCol);
     for(let cell = 0; cell < totalCells; cell++) {
         let rowColDiv = document.createElement('div');
+        rowColDiv.classList.add('row-col');
         gridContainerDiv.appendChild(rowColDiv);
     }
 }

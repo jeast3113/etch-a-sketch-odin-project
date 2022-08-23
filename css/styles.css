@@ -9,13 +9,16 @@
     grid-template-rows: repeat(var(--grid-rowCol), 1fr);
     width: 600px;
     height: 600px;
-    background-color: aqua;
     border: 2px solid black;
-    border-radius: 3%;
+    border-radius: 1%;
     position: absolute;
     top: 13%;
     left: 28%;
     z-index: 1;
+}
+
+.row-col {
+    border: 1px solid black;
 }
 
 
