@@ -17,7 +17,7 @@ counter = 1;
 function creatingGrid(rowCol = 16) {
     for(let rows = 0; rows < rowCol; rows++) {
         for(let cols = 0; cols < rowCol; cols++) {
-            gridCellDiv.textContent += "text"
+            gridCellDiv.textContent += counter++;
             gridContainerDiv.appendChild(gridCellDiv);
         }
     }
