@@ -36,6 +36,7 @@ function creatingHoverEffect() {
     gridCells.forEach(gridCell => {
         gridCell.addEventListener('mouseenter', function(e) {
             e.target.style.backgroundColor = 'red';
+            e.target.style.transition = "1.0s";
         });
     });
 }
