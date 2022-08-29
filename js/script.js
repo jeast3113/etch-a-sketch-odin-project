@@ -10,13 +10,13 @@ body.appendChild(gridContainerDiv);
 // create functions
 // first create a grid 16x16 and add it to the DOM; add a creatingGrid function
 // with a parameter set by default 16x16 
-function creatingGrid(rowCol = 16) {
-    let totalCells = rowCol * rowCol;
-    document.documentElement.style.setProperty("--grid-rowCol", rowCol);
+function creatingGrid(grid_cell = 16) {
+    let totalCells = grid_cell * grid_cell;
+    document.documentElement.style.setProperty("--grid-rowCol", grid_cell);
     for(let cell = 0; cell < totalCells; cell++) {
-        let rowColDiv = document.createElement('div');
-        rowColDiv.classList.add('row-col');
-        gridContainerDiv.appendChild(rowColDiv);
+        let gridCellDiv = document.createElement('div');
+        gridCellDiv.classList.add('grid-cell');
+        gridContainerDiv.appendChild(gridCellDiv);
     }
 }
 
@@ -26,5 +26,9 @@ creatingHoverEffect();
 
 // create a function for a hover-effect when the mouse enters the grid
 function creatingHoverEffect() {
-    console.log("Test");
+    // need to grab all of the grid cells that have already been created and appended
+    // query select the class and log it to the console to confirm
+    // create a variable to hold the nodes
+    let gridCells = document.querySelectorAll('.grid-cell');
+    console.log(gridCells);
 }
