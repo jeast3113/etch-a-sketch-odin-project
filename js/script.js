@@ -2,12 +2,15 @@
 
 const body = document.querySelector('body');
 console.log(body);
+//
 const gridContainerDiv = document.createElement('div');
 gridContainerDiv.classList.add('grid-container');
 body.appendChild(gridContainerDiv); 
+//
 const gridButton = document.createElement('button');
 gridButton.classList.add('grid-button');
-gridButton.textContent = 'change Grid';
+gridButton.textContent = 'change grid';
+body.appendChild(gridButton);
 console.log(gridButton);
 
 
