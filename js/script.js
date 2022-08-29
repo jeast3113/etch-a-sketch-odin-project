@@ -50,14 +50,8 @@ gridButton.addEventListener('click', () => {
     let userInput = parseInt(prompt('Please enter a number to change the grid: '));
     if(userInput > 100) {
         alert('Input is too large for grid. Please click the "change grid" button again');
-        gridContainerDiv.innerHTML = '';
-        creatingGrid(grid_cell);
-        creatingHoverEffect();
     } else if(userInput != parseInt(userInput)) {
         alert('Input was not a number. Please click the "change grid" button again');
-        gridContainerDiv.innerHTML = '';
-        creatingGrid(grid_cell);
-        creatingHoverEffect();
     } else {
         gridContainerDiv.innerHTML = '';
         creatingGrid(userInput);
