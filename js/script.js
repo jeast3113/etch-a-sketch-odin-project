@@ -7,11 +7,11 @@ const gridContainerDiv = document.createElement('div');
 gridContainerDiv.classList.add('grid-container');
 body.appendChild(gridContainerDiv); 
 //
+const grid_cell = 16;
 const gridButton = document.createElement('button');
 gridButton.classList.add('grid-button');
 gridButton.textContent = 'change grid';
 body.appendChild(gridButton);
-console.log(gridButton);
 
 
 // create functions
@@ -27,7 +27,7 @@ function creatingGrid(grid_cell = 16) {
     }
 }
 
-// call functions
+// call functions - initial start
 creatingGrid();
 creatingHoverEffect();
 
@@ -48,5 +48,19 @@ function creatingHoverEffect() {
 // of the grid.  Create an event listener function for this
 gridButton.addEventListener('click', () => {
     let userInput = parseInt(prompt('Please enter a number to change the grid: '));
-    console.log(userInput);
+    if(userInput > 100) {
+        alert('Input is too large for grid. Please click the "change grid" button again');
+        gridContainerDiv.innerHTML = '';
+        creatingGrid(grid_cell);
+        creatingHoverEffect();
+    } else if(userInput != parseInt(userInput)) {
+        alert('Input was not a number. Please click the "change grid" button again');
+        gridContainerDiv.innerHTML = '';
+        creatingGrid(grid_cell);
+        creatingHoverEffect();
+    } else {
+        gridContainerDiv.innerHTML = '';
+        creatingGrid(userInput);
+        creatingHoverEffect();
+    }
 });
