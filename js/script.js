@@ -47,5 +47,6 @@ function creatingHoverEffect() {
 // and changes the grid to that number times that number without changing the size
 // of the grid.  Create an event listener function for this
 gridButton.addEventListener('click', () => {
-    console.log('clicked!');
+    let userInput = parseInt(prompt('Please enter a number to change the grid: '));
+    console.log(userInput);
 });
