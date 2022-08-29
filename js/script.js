@@ -33,5 +33,9 @@ function creatingHoverEffect() {
     //loop through the nodelist and create an event listener for each node in the grid
     //add a style selector to the cell when the mouse hovers or enters the cell -
     //e.g. change the background color when the mouse enters the cell
-    console.log(gridCells);
+    gridCells.forEach(gridCell => {
+        gridCell.addEventListener('mouseenter', function(e) {
+            console.log(e);
+        });
+    });
 }
