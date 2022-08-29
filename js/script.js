@@ -5,6 +5,10 @@ console.log(body);
 const gridContainerDiv = document.createElement('div');
 gridContainerDiv.classList.add('grid-container');
 body.appendChild(gridContainerDiv); 
+const gridButton = document.createElement('button');
+gridButton.classList.add('grid-button');
+gridButton.textContent = 'change Grid';
+console.log(gridButton);
 
 
 // create functions
@@ -12,7 +16,7 @@ body.appendChild(gridContainerDiv);
 // with a parameter set by default 16x16 
 function creatingGrid(grid_cell = 16) {
     let totalCells = grid_cell * grid_cell;
-    document.documentElement.style.setProperty("--grid-gridCell", grid_cell);
+    document.documentElement.style.setProperty('--grid-gridCell', grid_cell);
     for(let cell = 0; cell < totalCells; cell++) {
         let gridCellDiv = document.createElement('div');
         gridCellDiv.classList.add('grid-cell');
