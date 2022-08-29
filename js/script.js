@@ -21,3 +21,10 @@ function creatingGrid(rowCol = 16) {
 }
 
 creatingGrid();
+creatingHoverEffect();
+
+
+// create a function for a hover-effect when the mouse enters the grid
+function creatingHoverEffect() {
+    console.log("Test");
+}
