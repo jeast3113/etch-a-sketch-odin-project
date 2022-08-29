@@ -12,7 +12,7 @@ body.appendChild(gridContainerDiv);
 // with a parameter set by default 16x16 
 function creatingGrid(grid_cell = 16) {
     let totalCells = grid_cell * grid_cell;
-    document.documentElement.style.setProperty("--grid-rowCol", grid_cell);
+    document.documentElement.style.setProperty("--grid-gridCell", grid_cell);
     for(let cell = 0; cell < totalCells; cell++) {
         let gridCellDiv = document.createElement('div');
         gridCellDiv.classList.add('grid-cell');
