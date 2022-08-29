@@ -20,22 +20,17 @@ function creatingGrid(grid_cell = 16) {
     }
 }
 
+// call functions
 creatingGrid();
 creatingHoverEffect();
 
 
 // create a function for a hover-effect when the mouse enters the grid
 function creatingHoverEffect() {
-    // need to grab all of the grid cells that have already been created and appended
-    // query select the class and log it to the console to confirm
-    // create a variable to hold the nodes
     let gridCells = document.querySelectorAll('.grid-cell');
-    //loop through the nodelist and create an event listener for each node in the grid
-    //add a style selector to the cell when the mouse hovers or enters the cell -
-    //e.g. change the background color when the mouse enters the cell
     gridCells.forEach(gridCell => {
         gridCell.addEventListener('mouseenter', function(e) {
-            e.target.style.backgroundColor = 'red';
+            e.target.style.backgroundColor = 'gray';
             e.target.style.transition = "1.0s";
         });
     });
