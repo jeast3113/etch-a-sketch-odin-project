@@ -42,3 +42,10 @@ function creatingHoverEffect() {
         });
     });
 }
+
+// create a function for grid-button that prompts a user to enter a number 
+// and changes the grid to that number times that number without changing the size
+// of the grid.  Create an event listener function for this
+gridButton.addEventListener('click', () => {
+    console.log('clicked!');
+});
