@@ -35,7 +35,7 @@ function creatingHoverEffect() {
     //e.g. change the background color when the mouse enters the cell
     gridCells.forEach(gridCell => {
         gridCell.addEventListener('mouseenter', function(e) {
-            console.log(e);
+            e.target.style.backgroundColor = 'red';
         });
     });
 }
