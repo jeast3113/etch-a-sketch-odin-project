@@ -68,6 +68,17 @@ function creatingHoverEffect() {
   });
 }
 
+//Create a similar function from above to utilize random colors during a hover event
+function creatingRandomColorHoverEffect() {
+  let gridCells = document.querySelectorAll(".grid-cell");
+  gridCells.forEach((gridCell) => {
+    gridCell.addEventListener("mouseenter", function (e) {
+      e.target.style.backgroundColor = `rgb(${randomRGBColor()}, ${randomRGBColor()}, ${randomRGBColor()})`;
+      e.target.style.transition = "1.0s";
+    });
+  });
+}
+
 // create a function for grid-button that prompts a user to enter a number
 // and changes the grid to that number times that number without changing the size
 // of the grid.  Create an event listener function for this
@@ -97,3 +108,7 @@ clearGridBtn.addEventListener("click", () => {
     gridCell.style.backgroundColor = "";
   });
 });
+
+//Create a listener for the random color button - changes color each time the mouse 
+//enters a new grid div
+randomClrBtn.addEventListener('click', creatingRandomColorHoverEffect);
