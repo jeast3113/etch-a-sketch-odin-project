@@ -36,6 +36,8 @@ function randomRGBColor() {
   return Math.floor(Math.random() * 256);
 }
 
+console.log(randomRGBColor());
+
 // first create a grid 16x16 and add it to the DOM; add a creatingGrid function
 // with a parameter set by default 16x16
 function creatingGrid(grid_cell = 16) {
