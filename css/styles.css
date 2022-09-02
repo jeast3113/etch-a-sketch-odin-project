@@ -39,6 +39,16 @@
 }
 
 
+.footer-container {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+
 
 
 

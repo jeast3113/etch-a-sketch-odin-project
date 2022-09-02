@@ -13,6 +13,12 @@ gridButton.classList.add('grid-button');
 gridButton.textContent = 'change grid';
 body.appendChild(gridButton);
 
+const footer = document.createElement('footer');
+footer.classList.add('footer-container');
+footer.textContent = "\u00A9 Copyright, The Odin Project, jeast 2022";
+console.log(footer);
+body.appendChild(footer);
+
 
 // create functions
 // first create a grid 16x16 and add it to the DOM; add a creatingGrid function
