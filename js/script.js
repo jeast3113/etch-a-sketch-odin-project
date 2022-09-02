@@ -3,6 +3,12 @@
 const body = document.querySelector("body");
 
 //
+const header = document.createElement('header');
+header.classList.add('header-container');
+header.textContent = "Fill - A - Pixel";
+body.appendChild(header);
+
+//
 const gridContainerDiv = document.createElement("div");
 gridContainerDiv.classList.add("grid-container");
 body.appendChild(gridContainerDiv);
