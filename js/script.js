@@ -34,7 +34,7 @@ body.appendChild(randomClrBtn);
 //
 const footer = document.createElement("footer");
 footer.classList.add("footer-container");
-footer.textContent = "\u00A9 Copyright, The Odin Project, jeast 2022";
+footer.textContent = "\u00A9 Copyright, jeast 2022";
 body.appendChild(footer);
 
 // ------------------------------------------------------------ //

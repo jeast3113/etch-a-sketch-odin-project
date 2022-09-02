@@ -44,9 +44,11 @@
     position: fixed;
     bottom: 0px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -145px;
     padding: 14px;
     text-transform: uppercase;
+    border-top: 2px solid black;
+    font-family: Pixel, sans-serif;
 }
 
 .clear-grid-button {
