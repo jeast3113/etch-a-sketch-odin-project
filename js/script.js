@@ -8,9 +8,6 @@ gridContainerDiv.classList.add('grid-container');
 body.appendChild(gridContainerDiv); 
 
 //
-// const grid_cell = 16;
-
-//
 const gridButton = document.createElement('button');
 gridButton.classList.add('grid-button');
 gridButton.textContent = 'change grid';
@@ -34,6 +31,12 @@ body.appendChild(footer);
 
 
 // create functions
+
+// Create a random number function for random RGB colors
+function randomRGBColor() {
+    return Math.floor(Math.random() * 256);
+}
+
 // first create a grid 16x16 and add it to the DOM; add a creatingGrid function
 // with a parameter set by default 16x16 
 function creatingGrid(grid_cell = 16) {
@@ -46,9 +49,10 @@ function creatingGrid(grid_cell = 16) {
     }
 }
 
-// call functions - initial start
+// - initial start
 creatingGrid();
 creatingHoverEffect();
+//-----------------------//
 
 
 // create a function for a hover-effect when the mouse enters the grid
