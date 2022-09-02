@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+.header-container {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -200px;
+    padding-top: 14px;
+    font-size: 48px;
+    font-family: Pixel, sans-serif;
+    border-bottom: 2px solid black;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(var(--grid-gridCell), 1fr);
