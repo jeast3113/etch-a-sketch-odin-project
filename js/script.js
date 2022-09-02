@@ -72,3 +72,11 @@ gridButton.addEventListener('click', () => {
         creatingHoverEffect();
     }
 });
+
+//Create a listener for the clear grid button - clears the grid to draw again
+clearGridBtn.addEventListener('click', () => {
+    let gridCells = document.querySelectorAll('.grid-cell');
+        gridCells.forEach(gridCell => {
+            gridCell.style.backgroundColor = "";
+    });
+});
