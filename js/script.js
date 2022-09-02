@@ -8,11 +8,19 @@ gridContainerDiv.classList.add('grid-container');
 body.appendChild(gridContainerDiv); 
 //
 const grid_cell = 16;
+
+//
 const gridButton = document.createElement('button');
 gridButton.classList.add('grid-button');
 gridButton.textContent = 'change grid';
 body.appendChild(gridButton);
+//
+const clearGridBtn = document.createElement('button');
+clearGridBtn.classList.add('clear-grid-button');
+clearGridBtn.textContent = 'clear grid';
+body.appendChild(clearGridBtn);
 
+//
 const footer = document.createElement('footer');
 footer.classList.add('footer-container');
 footer.textContent = "\u00A9 Copyright, The Odin Project, jeast 2022";
