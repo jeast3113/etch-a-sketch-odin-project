@@ -20,6 +20,10 @@ clearGridBtn.textContent = "clear grid";
 body.appendChild(clearGridBtn);
 
 //
+const randomClrBtn = document.createElement("button");
+randomClrBtn.classList.add("random-color-button");
+randomClrBtn.textContent = "add random colors";
+body.appendChild(randomClrBtn);
 
 //
 const footer = document.createElement("footer");
@@ -35,8 +39,6 @@ body.appendChild(footer);
 function randomRGBColor() {
   return Math.floor(Math.random() * 256);
 }
-
-console.log(randomRGBColor());
 
 // first create a grid 16x16 and add it to the DOM; add a creatingGrid function
 // with a parameter set by default 16x16
