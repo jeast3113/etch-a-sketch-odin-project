@@ -104,18 +104,20 @@ function changingGrid() {
   }
 }
 
+function clearingGrid() {
+  let gridCells = document.querySelectorAll(".grid-cell");
+  gridCells.forEach((gridCell) => {
+    gridCell.style.backgroundColor = "";
+  });
+}
+
 // create a function for grid-button that prompts a user to enter a number
 // and changes the grid to that number times that number without changing the size
 // of the grid.  Create an event listener function for this
 gridButton.addEventListener("click", changingGrid);
 
 //Create a listener for the clear grid button - clears the grid to draw again
-clearGridBtn.addEventListener("click", () => {
-  let gridCells = document.querySelectorAll(".grid-cell");
-  gridCells.forEach((gridCell) => {
-    gridCell.style.backgroundColor = "";
-  });
-});
+clearGridBtn.addEventListener("click", clearingGrid);
 
 //Create a listener for the random color button - changes color each time the mouse 
 //enters a new grid div
