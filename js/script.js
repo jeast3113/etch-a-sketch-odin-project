@@ -85,7 +85,7 @@ function creatingRandomColorHoverEffect() {
   });
 }
 
-function grid() {
+function changingGrid() {
   let userInput = parseInt(
     prompt("Please enter a number to change the grid: ")
   );
@@ -107,7 +107,7 @@ function grid() {
 // create a function for grid-button that prompts a user to enter a number
 // and changes the grid to that number times that number without changing the size
 // of the grid.  Create an event listener function for this
-gridButton.addEventListener("click", grid);
+gridButton.addEventListener("click", changingGrid);
 
 //Create a listener for the clear grid button - clears the grid to draw again
 clearGridBtn.addEventListener("click", () => {
