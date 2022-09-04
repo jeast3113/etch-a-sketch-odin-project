@@ -46,7 +46,9 @@
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
 }
 
-.grid-button:active {
+.grid-button:active,
+.clear-grid-button:active,
+.random-color-button:active {
   transform: scale(0.95);
 }
 
@@ -78,10 +80,6 @@
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
 }
 
-.clear-grid-button:active {
-  transform: scale(0.95);
-}
-
 .random-color-button {
   width: 150px;
   height: 50px;
@@ -97,8 +95,4 @@
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
-}
-
-.random-color-button:active {
-  transform: scale(0.95);
 }
