@@ -29,7 +29,9 @@
   z-index: 1;
 }
 
-.grid-button {
+.grid-button,
+.clear-grid-button,
+.random-color-button {
   width: 150px;
   height: 50px;
   text-transform: uppercase;
@@ -38,12 +40,15 @@
   color: aliceblue;
   border: 2px solid aliceblue;
   border-radius: 50%;
-  position: fixed;
-  top: 15%;
-  left: 44%;
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
+}
+
+.grid-button {
+  position: fixed;
+  top: 15%;
+  left: 44%;
 }
 
 .grid-button:active,
@@ -64,35 +69,13 @@
 }
 
 .clear-grid-button {
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: black;
-  color: aliceblue;
-  border: 2px solid aliceblue;
-  border-radius: 50%;
   position: fixed;
   left: 30%;
   top: 11%;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
 }
 
 .random-color-button {
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: black;
-  color: aliceblue;
-  border: 2px solid aliceblue;
-  border-radius: 50%;
   position: fixed;
   left: 58.5%;
   top: 11%;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
 }
