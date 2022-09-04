@@ -3,8 +3,8 @@
 const body = document.querySelector("body");
 
 //
-const header = document.createElement('header');
-header.classList.add('header-container');
+const header = document.createElement("header");
+header.classList.add("header-container");
 header.textContent = "Fill - A - Pixel";
 body.appendChild(header);
 
@@ -41,13 +41,10 @@ body.appendChild(footer);
 
 // create functions
 
-// Create a random number function for random RGB colors
 function randomRGBColor() {
   return Math.floor(Math.random() * 256);
 }
 
-// first create a grid 16x16 and add it to the DOM; add a creatingGrid function
-// with a parameter set by default 16x16
 function creatingGrid(grid_cell = 16) {
   let totalCells = grid_cell * grid_cell;
   document.documentElement.style.setProperty("--grid-gridCell", grid_cell);
@@ -63,7 +60,6 @@ creatingGrid();
 creatingHoverEffect();
 //-----------------------//
 
-// create a function for a hover-effect when the mouse enters the grid
 function creatingHoverEffect() {
   let gridCells = document.querySelectorAll(".grid-cell");
   gridCells.forEach((gridCell) => {
@@ -74,7 +70,6 @@ function creatingHoverEffect() {
   });
 }
 
-//Create a similar function from above to utilize random colors during a hover event
 function creatingRandomColorHoverEffect() {
   let gridCells = document.querySelectorAll(".grid-cell");
   gridCells.forEach((gridCell) => {
@@ -111,14 +106,7 @@ function clearingGrid() {
   });
 }
 
-// create a function for grid-button that prompts a user to enter a number
-// and changes the grid to that number times that number without changing the size
-// of the grid.  Create an event listener function for this
+// event listeners
 gridButton.addEventListener("click", changingGrid);
-
-//Create a listener for the clear grid button - clears the grid to draw again
 clearGridBtn.addEventListener("click", clearingGrid);
-
-//Create a listener for the random color button - changes color each time the mouse 
-//enters a new grid div
-randomClrBtn.addEventListener('click', creatingRandomColorHoverEffect);
+randomClrBtn.addEventListener("click", creatingRandomColorHoverEffect);
